@@ -1,0 +1,19 @@
+/* ===== Testimonials ===== */
+.testi-sec{background:var(--sand);}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px;}
+.testi-card{background:var(--ivory);padding:34px;border-radius:18px;box-shadow:0 20px 50px -30px rgba(14,59,54,.25);}
+.testi-stars{color:var(--gold);font-size:.85rem;letter-spacing:2px;}
+.testi-card p{font-family:var(--read);font-style:italic;font-size:1rem;line-height:1.6;color:var(--ink);margin-top:16px;}
+.testi-who{display:flex;align-items:center;gap:12px;margin-top:22px;}
+.testi-avatar{width:42px;height:42px;border-radius:50%;background:var(--teal-deep);color:var(--ivory);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:.95rem;flex-shrink:0;}
+.testi-who b{font-size:.84rem;color:var(--teal-deep);display:block;}
+.testi-who span{font-size:.7rem;color:var(--ink-soft);}
+@media (max-width:900px){.testi-grid{grid-template-columns:1fr;}}
+
+/* ===== Swipeable testimonial track (touch) ===== */
+.testi-grid{scroll-snap-type:x mandatory;}
+@media (max-width:900px){
+  .testi-grid{display:flex;overflow-x:auto;gap:18px;scroll-snap-type:x mandatory;padding-bottom:8px;-webkit-overflow-scrolling:touch;}
+  .testi-grid::-webkit-scrollbar{display:none;}
+  .testi-card{min-width:84vw;scroll-snap-align:center;}
+}

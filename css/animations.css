@@ -1,0 +1,46 @@
+/* ===== Scroll-direction reactive choreography ===== */
+/* "tide" motion language: elements rise on the way in, settle back gently on the way out */
+.tide{
+  opacity:0; transform:translateY(54px) scale(.97);
+  transition:opacity .9s cubic-bezier(.16,1,.3,1), transform .9s cubic-bezier(.16,1,.3,1);
+}
+.tide.in{opacity:1; transform:translateY(0) scale(1);}
+.tide.out-up{opacity:.15; transform:translateY(-30px) scale(.98);}
+
+.tide-l{opacity:0;transform:translateX(-60px) rotate(-1.5deg);transition:opacity .85s cubic-bezier(.16,1,.3,1), transform .85s cubic-bezier(.16,1,.3,1);}
+.tide-l.in{opacity:1;transform:translateX(0) rotate(0);}
+.tide-r{opacity:0;transform:translateX(60px) rotate(1.5deg);transition:opacity .85s cubic-bezier(.16,1,.3,1), transform .85s cubic-bezier(.16,1,.3,1);}
+.tide-r.in{opacity:1;transform:translateX(0) rotate(0);}
+
+.tide-pop{opacity:0;transform:scale(.82);transition:opacity .6s cubic-bezier(.34,1.56,.64,1), transform .6s cubic-bezier(.34,1.56,.64,1);}
+.tide-pop.in{opacity:1;transform:scale(1);}
+
+/* stagger delay via inline custom property --d set by JS */
+.tide, .tide-l, .tide-r, .tide-pop{transition-delay:var(--d, 0s);}
+
+/* direction class on body lets CSS know which way the user is moving */
+body.scroll-up .hero-bg{filter:brightness(1.04);}
+body.scroll-down header.scrolled{box-shadow:0 12px 34px -16px rgba(0,0,0,.5);}
+
+/* ===== Button ripple + magnetic feel ===== */
+.btn{position:relative;overflow:hidden;isolation:isolate;}
+.btn .ripple-dot{
+  position:absolute;border-radius:50%;background:rgba(255,255,255,.5);
+  transform:scale(0);pointer-events:none;animation:rippleExpand .65s ease-out forwards;
+}
+@keyframes rippleExpand{to{transform:scale(2.6);opacity:0;}}
+
+/* ===== Card tilt (desktop, mousemove driven) ===== */
+.deck-card, .court-card, .ktv-card, .room-card, .testi-card, .sub-item-card{
+  transform-style:preserve-3d;
+  transition:transform .25s cubic-bezier(.22,1,.36,1), box-shadow .25s ease, opacity .85s cubic-bezier(.16,1,.3,1);
+}
+
+/* ===== Press feedback (touch) ===== */
+.deck-card:active, .court-card:active, .ktv-card:active, .room-card:active,
+.intent-chip:active, .menu-cat:active, .rec-tab:active, .gal-item:active{
+  transform:scale(.97) !important;
+}
+
+/* ===== Number count-up readiness ===== */
+.st b, .compare-cell b, .detail-meta-row b{font-variant-numeric:tabular-nums;}

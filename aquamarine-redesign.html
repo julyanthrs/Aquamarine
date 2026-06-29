@@ -1,0 +1,616 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aquamarine Recreational Center — Lipa City, Batangas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Sora:wght@300;400;500;600;700;800&family=Spectral:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/ui.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/facilities.css">
+<link rel="stylesheet" href="css/venues.css">
+<link rel="stylesheet" href="css/recreation.css">
+<link rel="stylesheet" href="css/dining.css">
+<link rel="stylesheet" href="css/testimonials.css">
+<link rel="stylesheet" href="css/gallery.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/animations.css">
+
+</head>
+<body>
+<div id="loader">
+  <div class="ring"></div>
+  <span>Aquamarine Recreational Center</span>
+</div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div id="scrollRail"></div>
+<nav class="dot-nav" id="dotNav">
+  <span class="dn-item" data-target="top" data-label="Top"></span>
+  <span class="dn-item" data-target="deck" data-label="Facilities"></span>
+  <span class="dn-item" data-target="venues" data-label="Venues"></span>
+  <span class="dn-item" data-target="recreation" data-label="Hotel & Sports"></span>
+  <span class="dn-item" data-target="dining" data-label="Dining"></span>
+  <span class="dn-item" data-target="gallery" data-label="Gallery"></span>
+  <span class="dn-item" data-target="contact" data-label="Contact"></span>
+</nav>
+
+<header id="siteHeader">
+  <a href="#top" class="logo"><span class="ring-mark"></span>Aquamarine</a>
+  <nav class="primary">
+    <a href="#deck">Facilities</a>
+    <a href="#venues">Venues</a>
+    <a href="#dining">Dining</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <button class="tray-pill" id="trayToggleBtn">
+      <span class="tp-count" id="trayCount">0</span> My Visit Plan
+    </button>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#deck">Facilities</a>
+  <a href="#venues">Venues</a>
+  <a href="#dining">Dining</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-top">
+    <span class="hero-eyebrow"><span class="line"></span>Lipa City · Batangas · Est. Recreational Destination</span>
+    <h1>
+      <span class="wr"><span class="ln">Aquamarine</span></span>
+      <span class="wr"><span class="ln">Recreational <em>Center</em></span></span>
+    </h1>
+    <p class="hero-sub">One address in Batangas holds a hotel, five event halls, four sports courts, a full restaurant, and a karaoke wing — tell us why you're coming and we'll build the visit around it.</p>
+    <a href="#contact" class="btn btn-primary hero-cta">Book Now →</a>
+  </div>
+  <div class="intent-dock">
+    <span class="intent-label">What brings you here?</span>
+    <div class="intent-row" id="intentRow">
+      <button class="intent-chip" data-intent="wedding"><span class="ic-circle"></span>Wedding or Event</button>
+      <button class="intent-chip" data-intent="stay"><span class="ic-circle"></span>Staycation</button>
+      <button class="intent-chip" data-intent="sports"><span class="ic-circle"></span>Game Day</button>
+      <button class="intent-chip" data-intent="ktv"><span class="ic-circle"></span>Night Out</button>
+      <button class="intent-chip" data-intent="family"><span class="ic-circle"></span>Family Day</button>
+    </div>
+  </div>
+</section>
+
+<section class="stat-strip">
+  <div class="wrap">
+    <div class="st"><b>5</b><span>Event Venues</span></div>
+    <div class="st"><b>2</b><span>Hotel Room Types</span></div>
+    <div class="st"><b>4</b><span>Sports Courts</span></div>
+    <div class="st"><b>4</b><span>KTV Room Tiers</span></div>
+    <div class="st"><b>300</b><span>Max Guest Capacity</span></div>
+    <div class="st"><b>1</b><span>Address, Brgy. Banay-Banay</span></div>
+  </div>
+</section>
+
+<section class="deck-sec pad" id="deck">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="sh-text">
+        <span class="eyebrow">The Five Facilities</span>
+        <h2>One address, five reasons to come back.</h2>
+        <p>Open any facility to see what's inside it — venues, room types, courts, or KTV tiers — with real pricing and specs. Bookmark anything to build your visit plan as you go.</p>
+      </div>
+      <div class="sh-side">Cards highlight when they match your selected intent above. Clear the filter to see all five equally.</div>
+    </div>
+
+    <div class="deck-grid" id="deckGrid">
+
+      <div class="deck-card" data-intent="wedding,family" data-facility="event-venues">
+        <span class="dc-expand">5 venues inside →</span>
+        <img src="images/Event Venues.jpg" alt="Event Venues">
+        <div class="dc-tint"></div>
+        <div class="dc-body">
+          <span class="dc-eyebrow">/event-venues</span>
+          <h3>Event Venues</h3>
+          <div class="dc-meta"><span>Main Hall · Pavilion · Annex · Garden · Patrick's Place</span></div>
+          <div class="dc-meta"><span>50–300 pax · from ₱25,000</span></div>
+        </div>
+      </div>
+
+      <div class="deck-card" data-intent="stay,family" data-facility="hotel">
+        <span class="dc-expand">2 room types inside →</span>
+        <img src="images/Aquamarine.jpg" alt="Hotel">
+        <div class="dc-tint"></div>
+        <div class="dc-body">
+          <span class="dc-eyebrow">/hotel</span>
+          <h3>Hotel</h3>
+          <div class="dc-meta"><span>Suite · Deluxe</span><span>Pool access included</span></div>
+        </div>
+      </div>
+
+      <div class="deck-card" data-intent="family,wedding" data-facility="restaurant">
+        <span class="dc-expand">Full menu inside →</span>
+        <img src="images/Dining.png" alt="Restaurant">
+        <div class="dc-tint"></div>
+        <div class="dc-body">
+          <span class="dc-eyebrow">/restaurant</span>
+          <h3>Restaurant</h3>
+          <div class="dc-meta"><span>Ristorante D'Aby</span><span>Starters to dessert, kid's menu too</span></div>
+        </div>
+      </div>
+
+      <div class="deck-card" data-intent="ktv" data-facility="ktv">
+        <span class="dc-expand">4 room tiers inside →</span>
+        <img src="images/KTV.jpg" alt="KTV">
+        <div class="dc-tint"></div>
+        <div class="dc-body">
+          <span class="dc-eyebrow">/ktv</span>
+          <h3>KTV</h3>
+          <div class="dc-meta"><span>Absolute to Presidential, 5–25 pax</span></div>
+        </div>
+      </div>
+
+      <div class="deck-card" data-intent="sports,family" data-facility="sports">
+        <span class="dc-expand">4 courts inside →</span>
+        <img src="images/Sports Complex.jpg" alt="Sports Complex">
+        <div class="dc-tint"></div>
+        <div class="dc-body">
+          <span class="dc-eyebrow">/sports</span>
+          <h3>Sports Complex</h3>
+          <div class="dc-meta"><span>Basketball · Volleyball · Badminton · Table Tennis</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="venues-sec pad" id="venues">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="sh-text">
+        <span class="eyebrow">Event Venues, Compared</span>
+        <h2>Five halls. One table. No guesswork.</h2>
+        <p>Couples and event planners ask the same three questions first: how many guests, how much, and what's included. Here's all five venues side by side so you can shortlist before you call.</p>
+      </div>
+      <div class="sh-side">Prices shown are the Basic Venue Package. LED walls, upgraded sound, and live feed are add-ons quoted per hall.</div>
+    </div>
+
+    <div class="compare-table" id="compareTable">
+      <div class="compare-row head">
+        <div>Venue</div>
+        <div>Capacity</div>
+        <div>Basic Package</div>
+        <div>Best For</div>
+        <div></div>
+      </div>
+
+      <div class="compare-row">
+        <div class="compare-venue">
+          <img src="images/Main Hall.jpg" alt="Main Hall">
+          <div><div class="cv-name">Main Hall</div><div class="cv-tag">Largest of the five</div></div>
+        </div>
+        <div class="compare-cell"><span>Capacity</span><b>300 pax</b></div>
+        <div class="compare-cell"><span>Package</span><b>₱50,000</b></div>
+        <div class="compare-cell"><span>Best for</span>Conferences, big weddings</div>
+        <div class="compare-cta"><button class="btn btn-sm btn-line" data-detail="mainhall">Details</button></div>
+      </div>
+
+      <div class="compare-row">
+        <div class="compare-venue">
+          <img src="images/Pavillion.jpg" alt="Pavilion">
+          <div><div class="cv-name">Pavilion</div><div class="cv-tag">Life celebrations</div></div>
+        </div>
+        <div class="compare-cell"><span>Capacity</span><b>150 pax</b></div>
+        <div class="compare-cell"><span>Package</span><b>₱50,000</b></div>
+        <div class="compare-cell"><span>Best for</span>Weddings, milestone parties</div>
+        <div class="compare-cta"><button class="btn btn-sm btn-line" data-detail="pavilion">Details</button></div>
+      </div>
+
+      <div class="compare-row">
+        <div class="compare-venue">
+          <img src="images/Annex Hall.jpg" alt="Annex Hall">
+          <div><div class="cv-name">Annex Hall</div><div class="cv-tag">Intimate vibe</div></div>
+        </div>
+        <div class="compare-cell"><span>Capacity</span><b>100 pax</b></div>
+        <div class="compare-cell"><span>Package</span><b>₱35,000</b></div>
+        <div class="compare-cell"><span>Best for</span>Under-100 guest events</div>
+        <div class="compare-cta"><button class="btn btn-sm btn-line" data-detail="annex">Details</button></div>
+      </div>
+
+      <div class="compare-row">
+        <div class="compare-venue">
+          <img src="images/Aquamarine Garden.jpg" alt="Aquamarine Garden">
+          <div><div class="cv-name">Aquamarine Garden</div><div class="cv-tag">Open-air setting</div></div>
+        </div>
+        <div class="compare-cell"><span>Capacity</span><b>100 pax</b></div>
+        <div class="compare-cell"><span>Package</span><b>₱45,000</b></div>
+        <div class="compare-cell"><span>Best for</span>Baptisms, reunions, debuts</div>
+        <div class="compare-cta"><button class="btn btn-sm btn-line" data-detail="garden">Details</button></div>
+      </div>
+
+      <div class="compare-row">
+        <div class="compare-venue">
+          <img src="images/Patrick's Place.jpg" alt="Patrick's Place">
+          <div><div class="cv-name">Patrick's Place</div><div class="cv-tag">Smallest, most intimate</div></div>
+        </div>
+        <div class="compare-cell"><span>Capacity</span><b>50 pax</b></div>
+        <div class="compare-cell"><span>Package</span><b>₱25,000</b></div>
+        <div class="compare-cell"><span>Best for</span>Small gatherings</div>
+        <div class="compare-cta"><button class="btn btn-sm btn-line" data-detail="patricks">Details</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rec-sec pad" id="recreation">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="sh-text">
+        <span class="eyebrow">Stay, Play, Sing</span>
+        <h2>The rest of Aquamarine, organized by mood.</h2>
+        <p>Hotel rooms for resting, courts for moving, KTV rooms for everything in between. Switch tabs to jump straight to what you need.</p>
+      </div>
+    </div>
+
+    <div class="rec-tabs" id="recTabs">
+      <button class="rec-tab active" data-rec="hotel">Hotel Rooms</button>
+      <button class="rec-tab" data-rec="sports">Sports Complex</button>
+      <button class="rec-tab" data-rec="ktv">KTV Rooms</button>
+    </div>
+
+    <div class="rec-panel active" id="rec-hotel">
+      <div class="room-grid">
+        <div class="room-card">
+          <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1200" alt="Aquamarine Suite room">
+            <span class="room-size">50 m²</span>
+          </div>
+          <div class="room-body">
+            <h4>The Suite</h4>
+            <ul class="room-amen">
+              <li>1 kingsize bed + sofa bed</li>
+              <li>Two 45" / 40" Smart LED TVs</li>
+              <li>Bath tub + complete toiletries</li>
+              <li>Breakfast for two included</li>
+              <li>Complimentary pool access</li>
+              <li>24-hour concierge & housekeeping</li>
+            </ul>
+            <button class="btn btn-dark btn-sm" data-detail="suite">See full room details →</button>
+          </div>
+        </div>
+        <div class="room-card">
+          <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=1200" alt="Aquamarine Deluxe room">
+            <span class="room-size">25 m²</span>
+          </div>
+          <div class="room-body">
+            <h4>The Deluxe</h4>
+            <ul class="room-amen">
+              <li>2 double beds, 2 mattresses</li>
+              <li>40" Smart LED TV</li>
+              <li>Breakfast for two included</li>
+              <li>Complimentary pool access</li>
+              <li>Wireless internet, all hotel areas</li>
+              <li>24-hour concierge & housekeeping</li>
+            </ul>
+            <button class="btn btn-dark btn-sm" data-detail="deluxe">See full room details →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rec-panel" id="rec-sports">
+      <div class="court-grid">
+        <div class="court-card" data-detail="basketball"><img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=900" alt="Basketball court"><div class="cc-tint"></div>
+          <div class="cc-body"><span class="tag">Full Court</span><h4>Basketball</h4><span class="cc-cta">View details →</span></div></div>
+        <div class="court-card" data-detail="volleyball"><img src="https://images.unsplash.com/photo-1592656094267-764a45160876?q=80&w=900" alt="Volleyball court"><div class="cc-tint"></div>
+          <div class="cc-body"><span class="tag">Indoor</span><h4>Volleyball</h4><span class="cc-cta">View details →</span></div></div>
+        <div class="court-card" data-detail="badminton"><img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=900" alt="Badminton court"><div class="cc-tint"></div>
+          <div class="cc-body"><span class="tag">Indoor</span><h4>Badminton</h4><span class="cc-cta">View details →</span></div></div>
+        <div class="court-card" data-detail="tabletennis"><img src="https://images.unsplash.com/photo-1611251135345-18c56206b863?q=80&w=900" alt="Table tennis"><div class="cc-tint"></div>
+          <div class="cc-body"><span class="tag">Indoor</span><h4>Table Tennis</h4><span class="cc-cta">View details →</span></div></div>
+      </div>
+      <div style="margin-top:32px;"><a href="https://m.me/arcsportscomplex" target="_blank" class="btn btn-primary">Reserve a Slot</a></div>
+    </div>
+
+    <div class="rec-panel" id="rec-ktv">
+      <div class="ktv-grid">
+        <div class="ktv-card" data-detail="absolute">
+          <span class="kr-tier">Tier 01</span><h4>Absolute Room</h4>
+          <span class="kr-pax">Up to 5 pax</span>
+          <ul><li>TJ Media Videoke System</li><li>JBL Speakers</li><li>2 wireless microphones</li><li>UV-fogged before & after use</li></ul>
+        </div>
+        <div class="ktv-card" data-detail="premier">
+          <span class="kr-tier">Tier 02</span><h4>Premier Room</h4>
+          <span class="kr-pax">Up to 10 pax · 2 rooms available</span>
+          <ul><li>TJ Media Videoke System</li><li>JBL Speakers</li><li>2 wireless microphones</li><li>UV-fogged before & after use</li></ul>
+        </div>
+        <div class="ktv-card" data-detail="vip">
+          <span class="kr-tier">Tier 03</span><h4>VIP Room</h4>
+          <span class="kr-pax">Up to 15 pax</span>
+          <ul><li>TJ Media Videoke System</li><li>JBL Speakers</li><li>2 wireless microphones</li><li>UV-fogged before & after use</li></ul>
+        </div>
+        <div class="ktv-card" data-detail="presidential">
+          <span class="kr-tier">Tier 04</span><h4>Presidential Room</h4>
+          <span class="kr-pax">Up to 25 pax</span>
+          <ul><li>TJ Media Videoke System</li><li>JBL Speakers</li><li>2 wireless microphones</li><li>UV-fogged before & after use</li></ul>
+        </div>
+      </div>
+      <div style="margin-top:32px;"><a href="https://m.me/aquamarineph.KTV" target="_blank" class="btn btn-primary">Book a KTV Room</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="dining-sec pad" id="dining">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="sh-text">
+        <span class="eyebrow">Ristorante D'Aby</span>
+        <h2>Aurelio's kitchen, plated for the occasion.</h2>
+        <p>The in-house restaurant runs a full menu — soups, salads, pasta, steaks, and a dedicated kid's menu — whether you're staying the weekend or just stopping by for dinner.</p>
+      </div>
+    </div>
+
+    <div class="menu-cat-row" id="menuCatRow">
+      <button class="menu-cat active" data-cat="starters">Starters & Soups</button>
+      <button class="menu-cat" data-cat="mains">Mains</button>
+      <button class="menu-cat" data-cat="seafood">Seafood & Fish</button>
+      <button class="menu-cat" data-cat="sides">Sides & Sandwiches</button>
+      <button class="menu-cat" data-cat="desserts">Desserts & Drinks</button>
+      <button class="menu-cat" data-cat="kids">Kid's Menu</button>
+    </div>
+
+    <div class="menu-panel2 active" id="menu-starters">
+      <div class="menu-line"><span class="ml-name">Gyoza</span></div>
+      <div class="menu-line"><span class="ml-name">Wings Your Way</span></div>
+      <div class="menu-line"><span class="ml-name">Lito's Hearty Soup</span><span class="ml-sub" style="display:none"></span></div>
+      <div class="menu-line"><span class="ml-name">Traditional Bulalo Soup</span></div>
+      <div class="menu-line"><span class="ml-name">Caesar Salad</span></div>
+      <div class="menu-line"><span class="ml-name">Chinua's Salad</span></div>
+      <div class="menu-line"><span class="ml-name">Amy's Salad</span></div>
+    </div>
+
+    <div class="menu-panel2" id="menu-mains">
+      <div class="menu-line"><span class="ml-name">Aurelio's Ribs<span class="ml-sub">Pork</span></span></div>
+      <div class="menu-line"><span class="ml-name">Smoky Pork Belly<span class="ml-sub">Pork</span></span></div>
+      <div class="menu-line"><span class="ml-name">Twice Cooked Belly<span class="ml-sub">Pork</span></span></div>
+      <div class="menu-line"><span class="ml-name">Jujeh Kebab<span class="ml-sub">Chicken</span></span></div>
+      <div class="menu-line"><span class="ml-name">Chicken Katsu<span class="ml-sub">Chicken</span></span></div>
+      <div class="menu-line"><span class="ml-name">Chicken Bacon Wrapped<span class="ml-sub">Chicken</span></span></div>
+      <div class="menu-line"><span class="ml-name">Rib Eye Steak<span class="ml-sub">Beef</span></span></div>
+      <div class="menu-line"><span class="ml-name">Fillet Mignon<span class="ml-sub">Beef</span></span></div>
+    </div>
+
+    <div class="menu-panel2" id="menu-seafood">
+      <div class="menu-line"><span class="ml-name">Calamari Fritto</span></div>
+      <div class="menu-line"><span class="ml-name">Buttered Shrimp</span></div>
+      <div class="menu-line"><span class="ml-name">Shrimp Tempura</span></div>
+      <div class="menu-line"><span class="ml-name">Grilled Salmon</span></div>
+      <div class="menu-line"><span class="ml-name">Tanigue Ala Pobre</span></div>
+      <div class="menu-line"><span class="ml-name">Ravioli Pasta</span></div>
+      <div class="menu-line"><span class="ml-name">Cannelloni Pasta</span></div>
+    </div>
+
+    <div class="menu-panel2" id="menu-sides">
+      <div class="menu-line"><span class="ml-name">Family Platter</span></div>
+      <div class="menu-line"><span class="ml-name">Fiesta Platter</span></div>
+      <div class="menu-line"><span class="ml-name">Club House Sandwich</span></div>
+      <div class="menu-line"><span class="ml-name">Tuna Melt</span></div>
+      <div class="menu-line"><span class="ml-name">Fragrant Rice</span></div>
+      <div class="menu-line"><span class="ml-name">Java Rice</span></div>
+      <div class="menu-line"><span class="ml-name">Mashed Potato</span></div>
+      <div class="menu-line"><span class="ml-name">Coleslaw</span></div>
+    </div>
+
+    <div class="menu-panel2" id="menu-desserts">
+      <div class="menu-line"><span class="ml-name">Chocolate Cake</span></div>
+      <div class="menu-line"><span class="ml-name">Caramel Custard</span></div>
+      <div class="menu-line"><span class="ml-name">Banana Split</span></div>
+      <div class="menu-line"><span class="ml-name">Frappe<span class="ml-sub">Chocolate · Caramel · Strawberry</span></span></div>
+      <div class="menu-line"><span class="ml-name">Shake<span class="ml-sub">Chocolate · Mango · Strawberry</span></span></div>
+      <div class="menu-line"><span class="ml-name">Brewed Coffee & Tea</span></div>
+      <div class="menu-line"><span class="ml-name">Four Seasons / Pineapple Juice</span></div>
+    </div>
+
+    <div class="menu-panel2" id="menu-kids">
+      <div class="menu-line"><span class="ml-name">Spaghetti Pasta, Filipino Style<span class="ml-sub">With garlic bread</span></span></div>
+      <div class="menu-line"><span class="ml-name">Fried Chicken</span></div>
+      <div class="menu-line"><span class="ml-name">Mini Pizza</span></div>
+    </div>
+
+    <div style="margin-top:36px;"><a href="https://www.aquamarine.com.ph/dining" target="_blank" class="btn btn-primary" style="background:var(--gold);color:var(--teal-deep)">Reserve a Table</a></div>
+  </div>
+</section>
+
+<section class="testi-sec pad" id="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="sh-text">
+        <span class="eyebrow">From Guests Like You</span>
+        <h2>What people remember after they leave.</h2>
+      </div>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card"><div class="testi-stars">★★★★★</div>
+        <p>"We had our daughter's debut at the Pavilion and the team handled everything — sound, lights, even the rain backup plan."</p>
+        <div class="testi-who"><div class="testi-avatar">R</div><div><b>Rosario M.</b><span>Pavilion, Debut Celebration</span></div></div>
+      </div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div>
+        <p>"Booked the Suite for an anniversary weekend. The pool access alone made it worth the drive from Manila."</p>
+        <div class="testi-who"><div class="testi-avatar">J</div><div><b>Jonas P.</b><span>Hotel Suite, Staycation</span></div></div>
+      </div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div>
+        <p>"Reserved the badminton court every Saturday for our barangay league. Courts are well-kept and staff are easy to coordinate with."</p>
+        <div class="testi-who"><div class="testi-avatar">A</div><div><b>Aldrin C.</b><span>Badminton, Weekly League</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-sec pad" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="sh-text">
+        <span class="eyebrow">A Look Around</span>
+        <h2>The grounds, in pictures.</h2>
+      </div>
+    </div>
+    <div class="gal-grid" id="galGrid">
+      <div class="gal-item big"><img src="images/Main Hall.jpg" alt="Aquamarine grounds"><div class="gal-overlay"><span class="gal-plus">+</span></div></div>
+      <div class="gal-item"><img src="images/Aquamarine.jpg" alt="Pool"><div class="gal-overlay"><span class="gal-plus">+</span></div></div>
+      <div class="gal-item"><img src="images/KTV.jpg" alt="Wedding setup"><div class="gal-overlay"><span class="gal-plus">+</span></div></div>
+      <div class="gal-item"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=600" alt="Hotel room"><div class="gal-overlay"><span class="gal-plus">+</span></div></div>
+      <div class="gal-item"><img src="images/Aquamarine Garden.jpg" alt="Garden view"><div class="gal-overlay"><span class="gal-plus">+</span></div></div>
+      <div class="gal-item"><img src="images/Dining.png" alt="Dining table"><div class="gal-overlay"><span class="gal-plus">+</span></div></div>
+      <div class="gal-item"><img src="images/Sports Complex.jpg" alt="Sports court"><div class="gal-overlay"><span class="gal-plus">+</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" style="background:linear-gradient(135deg,var(--teal-deep),var(--teal-mid));text-align:center;">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--gold-light)">Ready When You Are</span>
+    <h2 style="font-family:var(--serif);font-size:clamp(2.2rem,4.6vw,3.6rem);color:var(--ivory);font-weight:500;margin-top:16px;max-width:760px;margin-left:auto;margin-right:auto;line-height:1.12;">Your visit plan is one tab away from becoming a real reservation.</h2>
+    <p style="font-family:var(--read);font-style:italic;color:rgba(250,247,239,.78);margin-top:18px;font-size:1.05rem;">Open My Visit Plan in the top right, or just call the team directly.</p>
+    <div style="display:flex;gap:16px;justify-content:center;margin-top:36px;flex-wrap:wrap;">
+      <button class="btn btn-primary" id="ctaOpenTray">Review My Visit Plan</button>
+      <a href="#contact" class="btn" style="border:1px solid rgba(250,247,239,.4);color:var(--ivory);">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact-sec pad" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="sh-text">
+        <span class="eyebrow">Get In Touch</span>
+        <h2>Brgy. Banay-Banay, Lipa City.</h2>
+        <p>Each department has its own line, so you reach the right person on the first call.</p>
+      </div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-list">
+        <div class="contact-item"><div class="ci-ic">📍</div><div><h4>Address</h4><p>Aquamarine Recreational Center, Brgy. Banay-Banay, Lipa City, Batangas, Philippines, 4217</p></div></div>
+        <div class="contact-item"><div class="ci-ic">🏛</div><div><h4>Event Center</h4><p>+63 977 827 3046 · +63 (43) 233 0787</p></div></div>
+        <div class="contact-item"><div class="ci-ic">🛏</div><div><h4>Hotel</h4><p>+63 917 514 6084 · +63 (43) 233 0787</p></div></div>
+        <div class="contact-item"><div class="ci-ic">🏀</div><div><h4>Sports Complex</h4><p>+63 977 827 3045 · +63 (43) 703 1960</p></div></div>
+        <div class="contact-item"><div class="ci-ic">🍽</div><div><h4>Restaurant</h4><p>+63 916 602 0337</p></div></div>
+        <div class="contact-item"><div class="ci-ic">🎤</div><div><h4>KTV</h4><p>+63 928 292 7108 · +63 (43) 727 5060</p></div></div>
+        <div class="contact-item"><div class="ci-ic">✉</div><div><h4>General Inquiries</h4><p>info@aquamarine.com.ph</p></div></div>
+      </div>
+      <div class="inquiry-form">
+        <h4>Send an Inquiry</h4>
+        <p>Tell us what you're planning and we'll route it to the right department.</p>
+        <form id="inquiryForm">
+          <div class="field-row">
+            <div class="field"><label>Full Name</label><input type="text" placeholder="Juan Dela Cruz" required></div>
+            <div class="field"><label>Contact Number</label><input type="tel" placeholder="09XX XXX XXXX" required></div>
+            <div class="field full"><label>I'm Interested In</label>
+              <select>
+                <option>Event Venue Booking</option>
+                <option>Hotel Reservation</option>
+                <option>Sports Complex Slot</option>
+                <option>KTV Room</option>
+                <option>Restaurant Reservation</option>
+                <option>General Inquiry</option>
+              </select>
+            </div>
+            <div class="field full"><label>Message</label><textarea placeholder="Tell us your date, headcount, or anything else we should know."></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="logo"><span class="ring-mark"></span>Aquamarine</a>
+        <p>A hotel, five event venues, a sports complex, restaurant, and KTV wing — all in Brgy. Banay-Banay, Lipa City, Batangas.</p>
+        <div class="foot-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="foot-col"><h5>Explore</h5>
+        <a href="#deck">Facilities</a><a href="#venues">Event Venues</a><a href="#recreation">Hotel & Sports</a><a href="#dining">Dining</a>
+      </div>
+      <div class="foot-col"><h5>Company</h5>
+        <a href="#">About Aquamarine</a><a href="#">Careers</a><a href="#">News Room</a><a href="#">Covid-19 Policy</a>
+      </div>
+      <div class="foot-col"><h5>Contact</h5>
+        <p>info@aquamarine.com.ph</p><p>+63 (43) 233 0787</p><p>Brgy. Banay-Banay, Lipa City</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Aquamarine Recreational Center. All rights reserved.</span>
+      <span>Privacy Policy · Sitemap</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Trip Tray -->
+<div class="tray-scrim" id="trayScrim"></div>
+<aside class="trip-tray" id="tripTray">
+  <div class="tray-head">
+    <h3>My Visit Plan</h3>
+    <div class="tray-close" id="trayClose">✕</div>
+  </div>
+  <div class="tray-body" id="trayBody">
+    <div class="tray-empty">
+      <div class="te-ic">🗒</div>
+      <p>Nothing saved yet. Tap the bookmark on any facility card to build your visit here.</p>
+    </div>
+  </div>
+  <div class="tray-foot">
+    <a href="#contact" class="btn btn-primary" id="traySendBtn">Send This Plan As an Inquiry</a>
+  </div>
+</aside>
+
+<!-- Detail overlay -->
+<div class="detail-overlay" id="detailOverlay">
+  <div class="detail-card" id="detailCard"></div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="lb-close" id="lbClose">&times;</span>
+  <img src="" alt="" id="lbImg">
+</div>
+
+<div class="float-stack">
+  <a class="float-btn fb-msg" href="https://m.me/aquamarineph" target="_blank"><span class="float-label">Message us</span>💬</a>
+  <a class="float-btn fb-call" href="tel:+6343233 0787"><span class="float-label">Call front desk</span>📞</a>
+</div>
+<div class="totop" id="totop">↑</div>
+
+<script src="js/data.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/buttons.js"></script>
+<script src="js/intent-filter.js"></script>
+<script src="js/detail-overlay.js"></script>
+<script src="js/trip-tray.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>
+
