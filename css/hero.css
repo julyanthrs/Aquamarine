@@ -27,7 +27,7 @@
   padding:17px 22px;border-radius:100px;
   background:linear-gradient(130deg, var(--gold-light) 0%, var(--gold) 65%);
   color:var(--teal-deep);text-decoration:none;
-  margin-top:44px;align-self:flex-start;
+  margin-top:104px;align-self:flex-start;
   position:relative;overflow:hidden;isolation:isolate;
   box-shadow:0 10px 36px -10px rgba(182,141,64,.55);
   opacity:0;
