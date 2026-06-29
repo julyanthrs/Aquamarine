@@ -51,7 +51,7 @@
 .float-stack{position:fixed;right:22px;bottom:22px;z-index:600;display:flex;flex-direction:column;gap:11px;align-items:flex-end;}
 .float-btn{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.4);transition:transform .35s cubic-bezier(.22,1,.36,1);position:relative;font-size:1.2rem;}
 .float-btn:hover{transform:scale(1.1);}
-.float-btn.fb-msg{background:#0084FF;color:white;}
+.float-btn.fb-msg{background:var(--aqua-light);color:white;}
 .float-btn.fb-call{background:var(--teal-deep);color:var(--ivory);}
 .float-btn svg{stroke:var(--gold-light);}
 .float-label{position:absolute;right:62px;top:50%;transform:translateY(-50%);background:var(--ink);color:var(--ivory);font-size:.72rem;padding:7px 13px;border-radius:4px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .3s ease;}
