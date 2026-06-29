@@ -6,17 +6,29 @@
 }
 .tide.in{opacity:1; transform:translateY(0) scale(1);}
 .tide.out-up{opacity:.15; transform:translateY(-30px) scale(.98);}
+.tide.out-down{opacity:0; transform:translateY(54px) scale(.97);}
 
 .tide-l{opacity:0;transform:translateX(-60px) rotate(-1.5deg);transition:opacity .85s cubic-bezier(.16,1,.3,1), transform .85s cubic-bezier(.16,1,.3,1);}
 .tide-l.in{opacity:1;transform:translateX(0) rotate(0);}
+.tide-l.out-up{opacity:.15;transform:translateX(-20px) rotate(0);}
+.tide-l.out-down{opacity:0;transform:translateX(-60px) rotate(-1.5deg);}
 .tide-r{opacity:0;transform:translateX(60px) rotate(1.5deg);transition:opacity .85s cubic-bezier(.16,1,.3,1), transform .85s cubic-bezier(.16,1,.3,1);}
 .tide-r.in{opacity:1;transform:translateX(0) rotate(0);}
+.tide-r.out-up{opacity:.15;transform:translateX(20px) rotate(0);}
+.tide-r.out-down{opacity:0;transform:translateX(60px) rotate(1.5deg);}
 
 .tide-pop{opacity:0;transform:scale(.82);transition:opacity .6s cubic-bezier(.34,1.56,.64,1), transform .6s cubic-bezier(.34,1.56,.64,1);}
 .tide-pop.in{opacity:1;transform:scale(1);}
+.tide-pop.out-up{opacity:.15;transform:scale(.98);}
+.tide-pop.out-down{opacity:0;transform:scale(.82);}
 
 /* stagger delay via inline custom property --d set by JS */
 .tide, .tide-l, .tide-r, .tide-pop{transition-delay:var(--d, 0s);}
+/* no stagger delay on exit — hide immediately, animate in with stagger */
+.tide.out-up,.tide.out-down,
+.tide-l.out-up,.tide-l.out-down,
+.tide-r.out-up,.tide-r.out-down,
+.tide-pop.out-up,.tide-pop.out-down{transition-delay:0s;}
 
 /* direction class on body lets CSS know which way the user is moving */
 body.scroll-up .hero-bg{filter:brightness(1.04);}

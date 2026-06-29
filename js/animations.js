@@ -28,11 +28,13 @@ const tideIO = new IntersectionObserver(entries => {
   entries.forEach(en => {
     if (en.isIntersecting){
       en.target.classList.add('in');
-      en.target.classList.remove('out-up');
+      en.target.classList.remove('out-up', 'out-down');
     } else if (en.boundingClientRect.top < 0) {
-      // scrolled past upward — settle back slightly for re-entry feel on scroll-up
-      en.target.classList.remove('in');
+      en.target.classList.remove('in', 'out-down');
       en.target.classList.add('out-up');
+    } else {
+      en.target.classList.remove('in', 'out-up');
+      en.target.classList.add('out-down');
     }
   });
 }, {threshold:0.14, rootMargin:'0px 0px -40px 0px'});
@@ -58,7 +60,6 @@ const statIO = new IntersectionObserver(entries => {
       const num = parseInt(raw.replace(/\D/g,''), 10);
       const suffix = raw.replace(/[\d]/g,'');
       if (!isNaN(num)) countUp(en.target, num, suffix);
-      statIO.unobserve(en.target);
     }
   });
 }, {threshold:0.5});
