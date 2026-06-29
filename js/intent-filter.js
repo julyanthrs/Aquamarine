@@ -2,7 +2,8 @@
 let activeIntent = null;
 const intentRow = document.getElementById('intentRow');
 const deckCards = document.querySelectorAll('.deck-card');
-intentRow.addEventListener('click', e => {
+if (!intentRow) { /* intent dock removed */ }
+else intentRow.addEventListener('click', e => {
   const chip = e.target.closest('.intent-chip');
   if (!chip) return;
   const val = chip.dataset.intent;
