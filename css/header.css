@@ -14,6 +14,21 @@ nav.primary a{font-size:.78rem;font-weight:500;letter-spacing:.02em;color:rgba(2
 nav.primary a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--gold-light);transition:width .4s cubic-bezier(.16,1,.3,1);}
 nav.primary a:hover::after{width:100%;}
 
+.nav-book-btn{
+  margin-left:22px;
+  padding:9px 22px !important;border-radius:100px;
+  background:linear-gradient(130deg, var(--gold-light) 0%, var(--gold) 65%) !important;
+  color:var(--teal-deep) !important;
+  font-size:.76rem !important;font-weight:700 !important;letter-spacing:.04em;
+  transition:transform .4s cubic-bezier(.22,1,.36,1), box-shadow .4s ease !important;
+  white-space:nowrap;
+}
+.nav-book-btn::after{display:none !important;}
+.nav-book-btn:hover{
+  transform:translateY(-2px) !important;
+  box-shadow:0 10px 24px -8px rgba(182,141,64,.55) !important;
+}
+
 .nav-right{display:flex;align-items:center;gap:18px;}
 .tray-pill{
   display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
