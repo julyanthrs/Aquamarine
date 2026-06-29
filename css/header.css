@@ -17,16 +17,18 @@ nav.primary a:hover::after{width:100%;}
 .nav-book-btn{
   margin-left:22px;
   padding:9px 22px !important;border-radius:100px;
-  background:linear-gradient(130deg, var(--gold-light) 0%, var(--gold) 65%) !important;
-  color:var(--teal-deep) !important;
+  background:transparent !important;
+  color:var(--gold-light) !important;
   font-size:.76rem !important;font-weight:700 !important;letter-spacing:.04em;
-  transition:transform .4s cubic-bezier(.22,1,.36,1), box-shadow .4s ease !important;
+  border:1.5px solid var(--gold-light);
+  transition:transform .4s cubic-bezier(.22,1,.36,1), box-shadow .4s ease, color .3s ease !important;
   white-space:nowrap;
 }
 .nav-book-btn::after{display:none !important;}
 .nav-book-btn:hover{
   transform:translateY(-2px) !important;
-  box-shadow:0 10px 24px -8px rgba(182,141,64,.55) !important;
+  color:var(--gold) !important;
+  box-shadow:0 10px 24px -8px rgba(182,141,64,.35) !important;
 }
 
 .nav-right{display:flex;align-items:center;gap:18px;}
