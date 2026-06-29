@@ -2,6 +2,7 @@
 .venues-sec{background:var(--teal-deep);color:var(--ivory);}
 .venues-sec .section-head h2{color:var(--ivory);}
 .venues-sec .section-head p{color:rgba(250,247,239,.75);}
+.venues-sec .section-head .sh-side{color:rgba(143,203,192,.7);}
 .compare-table{margin-top:50px;border-radius:18px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);}
 .compare-row{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1.3fr;align-items:center;padding:22px 28px;border-bottom:1px solid rgba(255,255,255,.08);transition:background .35s ease;}
 .compare-row:last-child{border-bottom:none;}
