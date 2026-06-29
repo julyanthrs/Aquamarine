@@ -43,10 +43,30 @@ body.scroll-down header.scrolled{box-shadow:0 12px 34px -16px rgba(0,0,0,.5);}
 @keyframes rippleExpand{to{transform:scale(2.6);opacity:0;}}
 
 /* ===== Card tilt (desktop, mousemove driven) ===== */
+/* transition is injected inline by JS so it never overrides tide timings */
 .deck-card, .court-card, .ktv-card, .room-card, .testi-card, .sub-item-card{
   transform-style:preserve-3d;
-  transition:transform .25s cubic-bezier(.22,1,.36,1), box-shadow .25s ease, opacity .85s cubic-bezier(.16,1,.3,1);
 }
+
+/* high-specificity (2-class) overrides — ensure tide transitions always win over
+   any single-class rule from other stylesheets, on every viewport size */
+.deck-card.tide-pop, .court-card.tide-pop, .ktv-card.tide-pop,
+.room-card.tide-pop, .testi-card.tide-pop, .sub-item-card.tide-pop{
+  transition:opacity .6s cubic-bezier(.34,1.56,.64,1), transform .6s cubic-bezier(.34,1.56,.64,1), box-shadow .35s ease;
+  transition-delay:var(--d, 0s);
+}
+.deck-card.tide, .court-card.tide, .ktv-card.tide,
+.room-card.tide, .testi-card.tide, .sub-item-card.tide{
+  transition:opacity .9s cubic-bezier(.16,1,.3,1), transform .9s cubic-bezier(.16,1,.3,1), box-shadow .35s ease;
+  transition-delay:var(--d, 0s);
+}
+/* suppress stagger on exit for card elements too */
+.deck-card.tide-pop.out-up,.deck-card.tide-pop.out-down,
+.court-card.tide-pop.out-up,.court-card.tide-pop.out-down,
+.ktv-card.tide-pop.out-up,.ktv-card.tide-pop.out-down,
+.room-card.tide-pop.out-up,.room-card.tide-pop.out-down,
+.testi-card.tide-pop.out-up,.testi-card.tide-pop.out-down,
+.sub-item-card.tide-pop.out-up,.sub-item-card.tide-pop.out-down{transition-delay:0s;}
 
 /* ===== Press feedback (touch) ===== */
 .deck-card:active, .court-card:active, .ktv-card:active, .room-card:active,

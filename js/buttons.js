@@ -17,11 +17,17 @@ document.addEventListener('click', e => {
 if (window.matchMedia('(hover:hover)').matches) {
   document.querySelectorAll('.deck-card, .court-card, .ktv-card, .room-card, .testi-card, .sub-item-card').forEach(card => {
     card.addEventListener('mousemove', e => {
+      if (!card.classList.contains('in')) return; // don't tilt while mid-animation
       const r = card.getBoundingClientRect();
       const px = (e.clientX - r.left) / r.width - 0.5;
       const py = (e.clientY - r.top) / r.height - 0.5;
+      card.style.transition = 'transform .2s cubic-bezier(.22,1,.36,1), box-shadow .2s ease';
       card.style.transform = `perspective(800px) rotateX(${(-py*5).toFixed(2)}deg) rotateY(${(px*6).toFixed(2)}deg) translateY(-3px)`;
     });
-    card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    card.addEventListener('mouseleave', () => {
+      card.style.transition = 'transform .35s cubic-bezier(.22,1,.36,1)';
+      card.style.transform = '';
+      card.addEventListener('transitionend', () => { card.style.transition = ''; }, {once:true});
+    });
   });
 }
