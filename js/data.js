@@ -5,11 +5,11 @@ const FACILITIES = {
     img:'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1200',
     desc:'Five tastefully crafted venues for weddings, debuts, corporate events, and everything between — adjustable from 50 to 300 guests, each with its own basic package and add-ons.',
     items:[
-      {key:'mainhall', name:'Main Hall', meta:'300 pax · ₱50,000', img:'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=300'},
-      {key:'pavilion', name:'Pavilion', meta:'150 pax · ₱50,000', img:'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=300'},
-      {key:'annex', name:'Annex Hall', meta:'100 pax · ₱35,000', img:'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=300'},
-      {key:'garden', name:'Aquamarine Garden', meta:'100 pax · ₱45,000', img:'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=300'},
-      {key:'patricks', name:"Patrick's Place", meta:'50 pax · ₱25,000', img:'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=300'},
+      {key:'mainhall', name:'Main Hall', meta:'300 pax · ₱50,000', img:"images/Main Hall.jpg"},
+      {key:'pavilion', name:'Pavilion', meta:'150 pax · ₱50,000', img:"images/Pavillion.jpg"},
+      {key:'annex', name:'Annex Hall', meta:'100 pax · ₱35,000', img:"images/Annex Hall.jpg"},
+      {key:'garden', name:'Aquamarine Garden', meta:'100 pax · ₱45,000', img:"images/Aquamarine Garden.jpg"},
+      {key:'patricks', name:"Patrick's Place", meta:'50 pax · ₱25,000', img:"images/Patrick's Place.jpg"},
     ]
   },
   hotel: {
@@ -57,7 +57,7 @@ const FACILITIES = {
 const DETAILS = {
   mainhall: {
     cat:'Event Venue', name:'Main Hall',
-    img:'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=900',
+    img:"images/Main Hall.jpg",
     desc:"Aquamarine's biggest venue, built for large gatherings and business conferences. The most flexible floor plan of the five halls, able to flex from a seated banquet to a conference layout.",
     meta:[['300','Max Pax'],['₱50,000','Basic Package'],['+₱15,000','LED Wall (Panoramic)']],
     list:['LED Wall, panoramic — ₱15,000','LED Wall, side — ₱10,000','Upgraded lights & sound — ₱10,000','Live feed, not recorded — ₱2,500','Adjustable seated or conference layout','In-house catering packages available'],
@@ -65,7 +65,7 @@ const DETAILS = {
   },
   pavilion: {
     cat:'Event Venue', name:'Pavilion',
-    img:'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=900',
+    img:"images/Pavillion.jpg",
     desc:'Built for life celebrations — big weddings and parties that want a proper hall without conference-room energy.',
     meta:[['150','Max Pax'],['₱50,000','Basic Package']],
     list:['LED Wall, panoramic — ₱15,000','LED Wall, side — ₱10,000','Upgraded lights & sound — ₱10,000','Live feed, not recorded — ₱2,500'],
@@ -73,7 +73,7 @@ const DETAILS = {
   },
   annex: {
     cat:'Event Venue', name:'Annex Hall',
-    img:'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=900',
+    img:"images/Annex Hall.jpg",
     desc:'For a more intimate vibe with under 100 guests. Sized to feel full, not empty, for mid-size celebrations.',
     meta:[['100','Max Pax'],['₱35,000','Basic Package']],
     list:['LED Wall — ₱20,000','Upgraded lights & sound — ₱10,000'],
@@ -81,7 +81,7 @@ const DETAILS = {
   },
   garden: {
     cat:'Event Venue · Outdoor', name:'Aquamarine Garden',
-    img:'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=900',
+    img:"images/Aquamarine Garden.jpg",
     desc:'An open-air setting for baptisms, birthdays, debuts, grad balls, weddings, reunions, anniversaries, and conventions.',
     meta:[['100','Max Pax'],['₱45,000','Basic Package']],
     list:['LED Wall — ₱15,000','Upgraded lights & sound — ₱10,000','Live feed, not recorded — ₱2,500','Outdoor garden setting'],
@@ -89,7 +89,7 @@ const DETAILS = {
   },
   patricks: {
     cat:'Event Venue', name:"Patrick's Place",
-    img:'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=900',
+    img:"images/Patrick's Place.jpg",
     desc:'The smallest and most intimate of the five halls — best suited for small gatherings that don\'t need a big room.',
     meta:[['50','Max Pax'],['₱25,000','Basic Package']],
     list:['LED Wall — ₱15,000','Upgraded lights & sound — ₱5,000'],
